@@ -11,7 +11,11 @@
   --warning: #ff8f00;
   --danger: #c62828;
 }
-
+.cj{
+   font-style: italic;
+    font-weight: bold;
+    font-family: 'Times New Roman', serif;
+  }
 * {
   margin: 0;
   padding: 0;
