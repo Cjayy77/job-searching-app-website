@@ -518,7 +518,44 @@ a {
     transform: none;
   }
 }
+/* How It Works Section - Mobile Fixes */
+@media (max-width: 768px) {
+  .steps-container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
 
+  .steps-container::before {
+    left: 1rem;
+  }
+
+  .step {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2rem;
+    width: calc(100% - 2rem);
+  }
+
+  .step-content {
+    width: 100%;
+    margin: 0 0 1rem 0 !important;
+  }
+
+  .step-number {
+    left: -2rem;
+    transform: none;
+  }
+
+  .step:nth-child(even) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .step:nth-child(odd) .step-content,
+  .step:nth-child(even) .step-content {
+    margin: 0 0 1rem 0;
+  }
+}
 @media (max-width: 768px) {
   .menu-btn {
     display: block;
